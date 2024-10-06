@@ -1,0 +1,146 @@
+*{box-sizing: border-box;}
+img{width: 100%;height: 100%; display: block;}
+body{background-color: rgb(240, 240, 240);}
+.headertop{
+    border: solid blue 1px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navleft, .navright{
+    width: 50%;
+    height: 100px;
+    border: solid red 1px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease-in-out 500ms;
+}
+
+.navleft div:nth-child(1){
+    width: 100px;
+}
+
+.homeiconimg{
+    padding: 20px;
+}
+
+.navleft div:nth-child(2){
+    padding: 30px 10px;
+    font-family: "arial black";
+}
+.homeiconimg:hover{
+    opacity: 0.5;
+}
+.homeiconlink{
+    text-decoration: none;
+    color: lightseagreen;
+}
+.homeiconlink:hover{
+    color: darkslateblue;
+    text-decoration: underline;
+}
+.navright div{
+    width: 100px;
+    padding: 20px;
+    height: 100%;
+}
+.navright div:nth-child(1){
+    margin-left: auto;
+}
+.navright div:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*---- NAVIGATION TABS ----*/
+.navlinks{
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    color:  darkslateblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.links:hover{
+    color: white;
+    text-decoration: underline;
+}
+/*----- INTRO IMAGE -----*/
+.introimage{
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+.introtitle{
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 3em;
+    color: aquamarine;
+    font-weight: bolder;
+}
+.bodyinfo{
+    width: 900px;
+    margin: auto;
+    display: flex;
+}
+.cardcontainer{
+    width: 75%;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardcontainer, .blogs{
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+.card{
+    width: 40%;
+    height: 300px;
+    border: solid 1px lightgray;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+   height: 40%;
+}
+.cardtitle{
+    padding: 5px 20px;
+    font-size: 1.5em;
+    color: darkslateblue;
+    cursor: pointer;
+}
+.cardtitle:hover{
+    text-decoration: underline;
+}
+/*------- RIGHT BLOG COLUMN ------*/
+.blogs{
+    height: auto;
+    width: 25%;
+    padding: 20px;
+}
+.blogs h2{
+    color: darkslateblue;
+}
+/*-- CONTACT SECTION --*/
+.footer{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+    color: darkslateblue;
+}
