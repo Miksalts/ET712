@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM by Micheal Fernandez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="studentname">Micheal Fernandez</h1>
+    <p>Welcome to DOM</p>
+    <p class="subtitle">Document Object model</p>
+    <p>Fall 2024</p>
+
+    <form>
+        <label for="age1">18 to 20</label>
+        <input type="checkbox" name="groupages" id="age1" value="agegroup1">
+        <label for="age2">21 to 35</label>
+        <input type="radio" name="groupages" id="age2" value="agegroup2">
+    </form>
+
+    <main class="container">
+        <section class="s1">
+            <p class="ps1">Welcome to DOM styling</p>
+            <p class="ps1">Try to change the font-size to 25px</p>
+        </section>
+        <section class="s2">
+            <div class="divs2"></div>
+            <div class="divs2"></div>
+        </section>
+    </main>
+
+    <script>
+        // collect the elements 
+        let h1name = document.getElementById("studentname");
+        let paragraphs = document.getElementsByTagName("p");
+        let subtitle = document.getElementsByClassName("subtitle")
+        let firstparagraph = document.querySelector("p")
+        let title = document.querySelector("#studentname")
+        let subtitle2 = document.querySelector(".subtitle")
+        let groupparagraphs = document.querySelectorAll("p")
+        let groupage2 = document.querySelector("#age2")
+
+        // change text content of the third paragraph
+        groupparagraphs[2].textContent = "hello there!";
+        subtitle2.innerHTML = "<b>The Tree Model in JavaScript</b>"
+
+        // change the style
+        h1name.style.color = "magenta";
+        h1name.style.textAlign = "center";
+        subtitle2.style.backgroundColor = "lightpink";
+        subtitle2.style.padding = "15px";
+
+        //chamge or add class name
+        groupparagraphs[0].className = "colorblue";
+        groupparagraphs[2].setAttribute("class", "colorblue")
+        h1name.setAttribute("class", "colorblue")
+
+
+        // set attribute 
+        groupage2.setAttribute("checked", "checked" )
+        
+        // EXERCISE
+// note: use querySelector() or querySelectorAll()
+// search for the first p with class ps1 and change the text content to "Micheal Fernandez"
+let ps1Paragraph = document.querySelector("p.ps1");
+ps1Paragraph.textContent = "Micheal Fernandez";
+
+// search for the second p with class ps1 and change the font-size to 25px  and color to olive
+let ps1Paragraphs = document.querySelectorAll("p.ps1")
+ps1Paragraphs[1].style.fontsize = "25px";
+ps1Paragraphs[1].style.color = "olive";
+
+// search for the first div with class divs2 and change the background color to indigo
+let divs2Div = document.querySelector("div.divs2");
+divs2Div.style.backgroundColor = "indigo";
+
+// search for the second div with class divs2 and change the width to 300px
+let divs2Divs = document.querySelectorAll("div.divs2");
+divs2Divs[1].style.width = "300px";
+    </script>
+</body>
+</html>
