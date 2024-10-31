@@ -1,0 +1,58 @@
+/* General Body Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for kids */
+    margin: 0;
+    padding: 20px; /* Add padding to the body */
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+/* Style for each section */
+.section {
+    margin: 20px 0; /* Space out sections */
+    padding: 20px; /* Padding inside sections */
+    border: 3px solid #ff9800; /* Orange border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Heading Styles */
+.section h2 {
+    margin: 0 0 10px; /* Margin for headings */
+    color: #ff5722; /* Bright red color for headings */
+    font-size: 24px; /* Larger font size for headings */
+}
+
+/* Paragraph Styles */
+.section p {
+    margin: 0; /* Remove default margin for paragraphs */
+    color: #333; /* Dark text color for paragraphs */
+    font-size: 18px; /* Larger font size for paragraphs */
+}
+
+/* Button Styles */
+.button {
+    margin: 10px; /* Margin around buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    font-size: 18px; /* Larger font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #ff9800; /* Orange button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background-color: #fb8c00; /* Darker orange on hover */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px; /* Margin for footer */
+    padding: 10px; /* Padding for footer */
+    background-color: #ff5722; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center; /* Center text in footer */
+    font-size: 18px; /* Larger font size for footer */
+}
