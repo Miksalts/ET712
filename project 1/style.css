@@ -1,19 +1,47 @@
 /* General Body Styles */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for kids */
     margin: 0;
     padding: 20px; /* Add padding to the body */
     background-color: #e0f7fa; /* Light blue background */
 }
 
+/* Main content takes available space */
+main {
+    flex: 1; /* Allow main to grow and take up available space */
+}
+
 /* Style for each section */
 .section {
     margin: 20px 0; /* Space out sections */
     padding: 20px; /* Padding inside sections */
-    border: 3px solid #ff9800; /* Orange border */
     border-radius: 10px; /* Rounded corners */
     background-color: #ffffff; /* White background for sections */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Colorful Backgrounds for Each Section */
+#home {
+    background-color: #ffccbc; /* Light peach */
+}
+
+#features {
+    background-color: #c8e6c9; /* Light green */
+}
+
+#about {
+    background-color: #bbdefb; /* Light blue */
+}
+
+#resources {
+    background-color: #ffe0b2; /* Light orange */
+}
+
+#contact {
+    background-color: #d1c4e9; /* Light purple */
 }
 
 /* Heading Styles */
@@ -40,6 +68,7 @@ body {
     color: white; /* Button text color */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth background transition */
 }
 
 /* Button Hover Effect */
@@ -55,4 +84,235 @@ footer {
     color: white; /* Footer text color */
     text-align: center; /* Center text in footer */
     font-size: 18px; /* Larger font size for footer */
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background color */
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Horizontal list */
+    margin: 0 15px; /* Space between links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for sections */
+}
+
+/* Image styles */
+.responsive-image {
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin: 10px 0; /* Space around the image */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}.animal-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.animal {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.animal-image {
+    width: 100px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.animal-image:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.alphabet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.letter {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letter:hover {
+    background-color: #e0e0e0;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15%
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.alphabet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.letter {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letter:hover {
+    background-color: #e0e0e0;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+body {
+    font-family: 'Patrick Hand', cursive; /* Cartoonish font */
+    text-align: center;
+    background-color: #f9f9f9; /* Optional: Light background color */
+}
+
+h1 {
+    font-size: 36px; /* Increased font size for main heading */
+    color: #FF5733; /* Bright red-orange color for main heading */
+}
+
+h2 {
+    font-size: 28px; /* Increased font size for secondary heading */
+    color: #337ab7; /* Bright blue color for secondary heading */
+}
+
+h3 {
+    font-size: 24px; /* Increased font size for tertiary heading */
+    color: #4CAF50; /* Green color for tertiary heading */
+}
+
+.alphabet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.letter {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffcc00; /* Bright yellow background for letters */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px; /* Font size for letters */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letter:hover {
+    background-color: #ffdd57; /* Slightly darker yellow on hover */
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-image {
+    max-width: 100%;
+    height: auto;
+}
+#returnToTop {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #FF5733; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+#returnToTop:hover {
+    background-color: #C70039; /* Darker shade on hover */
 }

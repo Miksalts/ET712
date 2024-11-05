@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRE-K Learning for All</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRE-K Learning for All</title>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <header style="text-align: center;">
-        <h1 style="margin: 0;">Amazing adventure of learning!: by Micheal Fernandez</h1>
+        <h1 style="margin: 0;">Amazing Adventure of Learning! by Micheal Fernandez</h1>
         <nav>
             <ul style="list-style-type: none; padding: 0;">
                 <li><a href="#home">Home</a></li>
@@ -22,11 +23,17 @@
     <main>
         <section id="home" style="text-align: center;">
             <h2>Welcome to Our Learning Platform</h2>
+            <a href="welcome.html"> <!-- Link to welcome page -->
+                <img src="Images/welcome.jpeg" alt="Welcome image" class="responsive-image">
+            </a>
             <p>We provide engaging educational content for pre-kindergarten children.</p>
         </section>
 
         <section id="features" style="text-align: center;">
             <h2>Features</h2>
+            <a href="features.html"> <!-- Link to features page -->
+                <img src="Images/learning.jpg" alt="Learning" class="responsive-image">
+            </a>
             <div class="container" style="margin: 20px 0;">
                 <button id="alertButton">Show Alert</button>
                 <button id="promptButton">Show Prompt</button>
@@ -37,23 +44,89 @@
         <section id="about" style="text-align: center;">
             <h2>About Us</h2>
             <p>Learn more about our mission and vision for early childhood education.</p>
+            <a href="about.html" class="button">Learn More</a> <!-- Link to about page -->
         </section>
 
         <section id="resources" style="text-align: center;">
             <h2>Resources</h2>
             <p>Explore our collection of educational resources and activities.</p>
+            <a href="resources.html" class="button">View Resources</a> <!-- Link to resources page -->
         </section>
 
         <section id="contact" style="text-align: center;">
             <h2>Contact Us</h2>
             <p>If you have any questions, feel free to reach out!</p>
+            <a href="contact.html" class="button">Contact Us</a> <!-- Link to contact page -->
         </section>
+        <section id="animal-interaction" style="text-align: center;">
+            <h2>Click the Animals!</h2>
+            <div class="animal-container">
+                <div class="animal" id="cat">
+                    <img src="Images/cat.png" alt="Cat" class="animal-image">
+                    <p>Cat clicked <span id="catCount">0</span> times</p>
+                </div>
+                <div class="animal" id="dog">
+                    <img src="Images/dog.png" alt="Dog" class="animal-image">
+                    <p>Dog clicked <span id="dogCount">0</span> times</p>
+                </div>
+                <div class="animal" id="cow">
+                    <img src="Images/cow.png" alt="Cow" class="animal-image">
+                    <p>Cow clicked <span id="cowCount">0</span> times</p>
+                </div>
+            </div>
+            <section id="alphabet" style="text-align: center;">
+                <h2>Click a Letter!</h2>
+                <div class="alphabet-container">
+                    <div class="letter" onclick="openModal('A', 'A is for Apple. Apples are delicious and healthy fruits.', 'Images/apple.png')">A</div>
+                    <div class="letter" onclick="openModal('B', 'B is for Ball. Balls are fun to play with.', 'Images/ball.png')">B</div>
+                    <div class="letter" onclick="openModal('C', 'C is for Cat. Cats are furry animals that are often kept as pets.', 'Images/cat.png')">C</div>
+                    <div class="letter" onclick="openModal('D', 'D is for Dog. Dogs are loyal companions.', 'Images/dog.png')">D</div>
+                    <div class="letter" onclick="openModal('E', 'E is for Elephant. Elephants are the largest land animals.', 'Images/elephant.png')">E</div>
+                    <!-- Add more letters as needed -->
+                </div>
+            </section>
+            <section id="numbers" style="text-align: center;">
+                <h2>Number Slider</h2>
+                <div class="slider">
+                    <div class="slide" id="slide1">
+                        <h3>1</h3>
+                        <p>One is the first number. It is unique!</p>
+                        <img src="Images/one.png" alt="One" class="slide-image">
+                    </div>
+                    <div class="slide" id="slide2">
+                        <h3>2</h3>
+                        <p>Two is the second number. You can have two eyes!</p>
+                        <img src="Images/two.png" alt="Two" class="slide-image">
+                    </div>
+                    <div class="slide" id="slide3">
+                        <h3>3</h3>
+                        <p>Three is the third number. You can have three wheels on a tricycle!</p>
+                        <img src="Images/three.png" alt="Three" class="slide-image">
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <button onclick="prevSlide()">Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </section>
+        </section>
+        
     </main>
 
     <footer style="text-align: center;">
-        <p>&copy; 2024 Amazing adventure of learning!. All rights reserved.</p>
+        <p>&copy; 2024 Amazing Adventure of Learning! All rights reserved.</p>
     </footer>
+<!-- Modal Structure -->
+<div id="alphabetModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <img id="modalImage" src="" alt="" class="modal-image">
+    </div>
+</div>
 
-    <script src="project.js"></script>
+<button id="returnToTop" onclick="scrollToTop()">↑ Return to Top</button>
+
+    <script src="Project.js"></script>
 </body>
 </html>
